@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "AWS 東京",
+    "location": [35.6895, 139.6917],
+    "co2_emission": 100,
+    "energy_source": "火力発電",
+    "best_time": "22:00-06:00"
+  },
+  {
+    "id": 2,
+    "name": "Google Cloud フランクフルト",
+    "location": [50.1109, 8.6821],
+    "co2_emission": 30,
+    "energy_source": "再生可能エネルギー",
+    "best_time": "18:00-04:00"
+  }
+]
