@@ -2,10 +2,18 @@ import { useState } from "react";
 import ModelSelector from "./components/ModelSelector";
 import Map from "./components/Map";
 
+// サーバーの型定義
+type ServerLocation = {
+  name: string;
+  time: string;
+  ecoIndex: number;
+  diff: number;
+};
+
 function App() {
   const [step, setStep] = useState(1);
-  const [modelData, setModelData] = useState(null);
-  const [selectedServer, setSelectedServer] = useState(null);
+  const [_modelData, setModelData] = useState(null); // 未使用なので "_" をつける
+  const [selectedServer, setSelectedServer] = useState<ServerLocation | null>(null);
 
   return (
     <div className="p-5">
